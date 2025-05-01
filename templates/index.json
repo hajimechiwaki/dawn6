@@ -121,10 +121,22 @@
             "text": "5/10-11 FRAGRANT GARDEN",
             "text_style": "body"
           }
+        },
+        "buttons_GK4nBm": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "FRAGRANT GARDEN",
+            "button_link_1": "https://mitosaya.com/products/tkt-019-fragrant-garden",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
       },
       "block_order": [
-        "text_RkLR6P"
+        "text_RkLR6P",
+        "buttons_GK4nBm"
       ],
       "custom_css": [
         "#Banner-template--15706061537450__image_banner_kTzyc6 {margin-left: -20px; margin-right: -20px;}"
