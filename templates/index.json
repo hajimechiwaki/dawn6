@@ -113,6 +113,19 @@
     },
     "image_banner_kTzyc6": {
       "type": "image-banner",
+      "blocks": {
+        "text_RkLR6P": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "5/10-11 FRAGRANT GARDEN",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_RkLR6P"
+      ],
       "custom_css": [
         "#Banner-template--15706061537450__image_banner_kTzyc6 {margin-left: -20px; margin-right: -20px;}"
       ],
@@ -123,7 +136,7 @@
         "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
-        "show_text_box": true,
+        "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
