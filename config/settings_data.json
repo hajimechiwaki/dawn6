@@ -114,6 +114,14 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "announcement_iEq7D9": {
+            "type": "announcement",
+            "settings": {
+              "text": "Introducing Masanao Hirayama (HIMAA)",
+              "color_scheme": "accent-1",
+              "link": "https://mitosaya.com/blogs/news/20250502-masanao-hirayama-himaa"
+            }
+          },
           "da8b053b-43cd-4818-a123-9ff8d5b8d762": {
             "type": "announcement",
             "disabled": true,
@@ -125,19 +133,11 @@
           },
           "announcement_BPVxwi": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "🌿 FRAGRANT GARDEN - 5/10, 5/11",
               "color_scheme": "accent-1",
               "link": "https://mitosaya.com/products/tkt-019-fragrant-garden"
-            }
-          },
-          "announcement_WPr7H4": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "accent-1",
-              "link": ""
             }
           },
           "announcement_bJTjWz": {
@@ -146,14 +146,14 @@
             "settings": {
               "text": "November in MITOSAYA",
               "color_scheme": "accent-1",
-              "link": "https://mitosaya.com/blogs/news/202411-calendar"
+              "link": "shopify://collections/new-arrival"
             }
           }
         },
         "block_order": [
+          "announcement_iEq7D9",
           "da8b053b-43cd-4818-a123-9ff8d5b8d762",
           "announcement_BPVxwi",
-          "announcement_WPr7H4",
           "announcement_bJTjWz"
         ],
         "settings": {}
