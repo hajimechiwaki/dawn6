@@ -117,7 +117,7 @@
         "buttons_GK4nBm": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "5/10-11  FRAGRANT GARDEN",
+            "button_label_1": "143 BLOOD ORANGE",
             "button_link_1": "https://mitosaya.com/products/tkt-019-fragrant-garden",
             "button_style_secondary_1": true,
             "button_label_2": "",
@@ -134,7 +134,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/openday_202505.jpg",
+        "image": "shopify://shop_images/eau-143-25-blood-orange_img00.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "adapt_height_first_image": false,
