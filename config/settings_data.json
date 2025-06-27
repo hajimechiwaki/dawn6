@@ -116,6 +116,7 @@
         "blocks": {
           "announcement_iEq7D9": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Introducing Masanao Hirayama (HIMAA)",
               "color_scheme": "accent-1",
@@ -142,11 +143,10 @@
           },
           "announcement_bJTjWz": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "November in MITOSAYA",
+              "text": "スタッフ募集のお知らせ | We Are Hiring",
               "color_scheme": "accent-1",
-              "link": "shopify://collections/new-arrival"
+              "link": "shopify://blogs/news/20250627-we-are-hiring"
             }
           }
         },
