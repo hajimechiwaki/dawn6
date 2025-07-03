@@ -117,8 +117,8 @@
         "buttons_GK4nBm": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "143 BLOOD ORANGE",
-            "button_link_1": "https://mitosaya.com/products/eau-143-25-blood-orange",
+            "button_label_1": "198 LOQUARETTO",
+            "button_link_1": "shopify://products/eau-198-loquaretto",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -134,7 +134,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/eau-143-25-blood-orange_img00.jpg",
+        "image": "shopify://shop_images/eau-198-loquaretto_img00.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "adapt_height_first_image": false,
