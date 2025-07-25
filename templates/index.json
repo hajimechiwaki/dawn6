@@ -83,7 +83,9 @@
         "slide_LkQ6yp"
       ],
       "disabled": true,
-      "custom_css": [],
+      "custom_css": [
+        ".slideshow {margin: 0 -40px;}"
+      ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
