@@ -85,7 +85,7 @@
       ],
       "custom_css": [
         ".slideshow {margin: -60px -40px 0 -40px;}",
-        ".slideshow__slide {margin: 0 -40px;}"
+        ".slideshow__slide {margin: 0 0 0 0;}"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
