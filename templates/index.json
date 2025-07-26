@@ -84,7 +84,8 @@
         "slide_LkQ6yp"
       ],
       "custom_css": [
-        ".slideshow {margin: -60px -40px 0 -40px;}"
+        ".slideshow {margin: -60px -40px 0 -40px;}",
+        ".slideshow__media {padding: 0 -40px;}"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
