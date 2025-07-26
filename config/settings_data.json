@@ -143,6 +143,7 @@
           },
           "announcement_bJTjWz": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "スタッフ募集のお知らせ | We Are Hiring",
               "color_scheme": "accent-1",
