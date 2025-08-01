@@ -122,7 +122,9 @@
         "slide_LDB3Ln"
       ],
       "custom_css": [
-        ".slideshow {margin: -60px -40px 0 -40px;}"
+        "slideshow-component {margin-right: -40px; margin-left: -40px;}",
+        ".slideshow {margin-top: -60px; gap: 0;}",
+        ".slideshow__slide {margin: 0; border: 1px solid #f00;}"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
