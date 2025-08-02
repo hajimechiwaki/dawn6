@@ -114,22 +114,12 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "announcement_iEq7D9": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "text": "Introducing Masanao Hirayama (HIMAA)",
-              "color_scheme": "accent-1",
-              "link": "https://mitosaya.com/blogs/news/20250502-masanao-hirayama-himaa"
-            }
-          },
           "da8b053b-43cd-4818-a123-9ff8d5b8d762": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "[event] 8/10,11  MITOSAYA POP UP AT CHISE (HOKKAIDO)",
+              "text": "Join the mitosaya pals | mitosaya pals 新規会員募集中",
               "color_scheme": "accent-1",
-              "link": "shopify://blogs/news/20240725-mitosaya-pop-up-at-chise"
+              "link": "shopify://products/mitosaya-pals"
             }
           },
           "announcement_BPVxwi": {
@@ -152,7 +142,6 @@
           }
         },
         "block_order": [
-          "announcement_iEq7D9",
           "da8b053b-43cd-4818-a123-9ff8d5b8d762",
           "announcement_BPVxwi",
           "announcement_bJTjWz"
