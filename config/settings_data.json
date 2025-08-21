@@ -124,6 +124,7 @@
           },
           "da8b053b-43cd-4818-a123-9ff8d5b8d762": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Join the mitosaya pals | mitosaya pals 新規会員募集中",
               "color_scheme": "accent-1",
