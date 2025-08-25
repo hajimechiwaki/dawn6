@@ -54,7 +54,7 @@
         "38aa155a-15e6-4f12-b934-ce5c06449f07": {
           "type": "shopify://apps/seal-subscriptions/blocks/subscription-widget/13b25004-a140-4ab7-b5fe-29918f759699",
           "settings": {
-            "product": "{{product}}"
+            "product": "guided-tasting"
           }
         },
         "buy_buttons": {
