@@ -116,6 +116,7 @@
         "blocks": {
           "announcement_k9RBQU": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "mitosayaとCAN-PANY - 8月のスケジュール",
               "color_scheme": "accent-1",
@@ -133,11 +134,10 @@
           },
           "announcement_BPVxwi": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "🌿 FRAGRANT GARDEN - 5/10, 5/11",
+              "text": "New Release / 新製品のお知らせ",
               "color_scheme": "accent-1",
-              "link": "https://mitosaya.com/products/tkt-019-fragrant-garden"
+              "link": "shopify://collections/new-arrival"
             }
           },
           "announcement_bJTjWz": {
