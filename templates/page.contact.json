@@ -55,10 +55,10 @@
             "label-one": "商品の内容について",
             "label-two": "商品のご購入、お取り扱いについて",
             "label-three": "公開日・イベントについて",
-            "label-four": "果物や植物の仕入れについて",
+            "label-four": "原料のご提案について",
             "label-five": "取材・撮影について",
             "label-six": "採用について",
-            "label-seven": "[10×10 CAN-PAIGN] お申し込み",
+            "label-seven": "お申し込み",
             "label-eight": "その他",
             "label-nine": ""
           }
@@ -79,6 +79,7 @@
         "5e824a4f-ff37-486f-bb58-620864203879",
         "5c68ad54-c39a-404f-ac8e-0e9b91de1329"
       ],
+      "custom_css": [],
       "settings": {
         "heading": "",
         "color_scheme": "background-1",
