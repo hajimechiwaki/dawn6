@@ -135,9 +135,9 @@
           "announcement_BPVxwi": {
             "type": "announcement",
             "settings": {
-              "text": "New Release / 新製品のお知らせ",
+              "text": "New Release in October / 10月の新製品",
               "color_scheme": "accent-1",
-              "link": "shopify://blogs/news/20250929_new-release"
+              "link": "shopify://blogs/news/20251026-new-release-in-october"
             }
           },
           "announcement_bJTjWz": {
