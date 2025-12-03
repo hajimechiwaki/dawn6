@@ -116,11 +116,10 @@
         "blocks": {
           "announcement_k9RBQU": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "mitosayaとCAN-PANY - 8月のスケジュール",
+              "text": "mitosayaとCAN-PANY - 12月のスケジュール",
               "color_scheme": "accent-1",
-              "link": "https://mitosaya.com/blogs/news/202508-calendar"
+              "link": "shopify://blogs/news/202512-calendar"
             }
           },
           "da8b053b-43cd-4818-a123-9ff8d5b8d762": {
@@ -134,6 +133,7 @@
           },
           "announcement_BPVxwi": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Guided Tour with Tasting : 12月の予約受付を行っています",
               "color_scheme": "accent-1",
