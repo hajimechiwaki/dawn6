@@ -124,6 +124,7 @@
           },
           "announcement_k9RBQU": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "mitosayaとCAN-PANY - 12月のスケジュール",
               "color_scheme": "accent-1",
