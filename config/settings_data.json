@@ -114,6 +114,14 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "announcement_UkwepE": {
+            "type": "announcement",
+            "settings": {
+              "text": "Winter Releases & Free Gift Wreath / 新製品とプレゼントのご案内",
+              "color_scheme": "accent-1",
+              "link": "shopify://blogs/news/new-release-in-november"
+            }
+          },
           "announcement_k9RBQU": {
             "type": "announcement",
             "settings": {
@@ -151,6 +159,7 @@
           }
         },
         "block_order": [
+          "announcement_UkwepE",
           "announcement_k9RBQU",
           "da8b053b-43cd-4818-a123-9ff8d5b8d762",
           "announcement_BPVxwi",
