@@ -237,8 +237,8 @@
         "buttons_GK4nBm": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "206 YERBA BUENA",
-            "button_link_1": "shopify://products/eau-206-yerba-buena",
+            "button_label_1": "066 JUVENILE CALVA",
+            "button_link_1": "shopify://products/eau-066-25-juvenile-calva",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -254,7 +254,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/eau-206-yerba-buena_img00.jpg",
+        "image": "shopify://shop_images/eau-066-25-juvenile-calva_img00.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "adapt_height_first_image": false,
