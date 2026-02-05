@@ -116,6 +116,7 @@
         "blocks": {
           "announcement_UkwepE": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "1/31 映画「風のマジム」上映会を開催します",
               "color_scheme": "accent-1",
@@ -144,7 +145,7 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "Guided Tour with Tasting : 12月の予約受付を行っています",
+              "text": "Guided Tour with Tasting : 2-3月の予約受付を行っています",
               "color_scheme": "accent-1",
               "link": "https://mitosaya.com/products/guided-tasting"
             }
