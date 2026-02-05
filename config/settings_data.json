@@ -114,6 +114,15 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "announcement_UiNE7k": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Welcome to our store",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          },
           "announcement_UkwepE": {
             "type": "announcement",
             "disabled": true,
@@ -143,7 +152,6 @@
           },
           "announcement_BPVxwi": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "Guided Tour with Tasting : 2-3月の予約受付を行っています",
               "color_scheme": "accent-1",
@@ -161,6 +169,7 @@
           }
         },
         "block_order": [
+          "announcement_UiNE7k",
           "announcement_UkwepE",
           "announcement_k9RBQU",
           "da8b053b-43cd-4818-a123-9ff8d5b8d762",
