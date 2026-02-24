@@ -114,6 +114,14 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "announcement_dBM77C": {
+            "type": "announcement",
+            "settings": {
+              "text": "New Release in February / 新製品のご紹介",
+              "color_scheme": "accent-1",
+              "link": "https://mitosaya.com/collections/new-arrival"
+            }
+          },
           "announcement_UiNE7k": {
             "type": "announcement",
             "disabled": true,
@@ -152,6 +160,7 @@
           },
           "announcement_BPVxwi": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Guided Tour with Tasting : 2-3月の予約受付を行っています",
               "color_scheme": "accent-1",
@@ -169,6 +178,7 @@
           }
         },
         "block_order": [
+          "announcement_dBM77C",
           "announcement_UiNE7k",
           "announcement_UkwepE",
           "announcement_k9RBQU",
