@@ -124,6 +124,7 @@
           },
           "announcement_dBM77C": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "New Release in February / 新製品のご紹介",
               "color_scheme": "accent-1",
