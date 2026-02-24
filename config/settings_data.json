@@ -114,6 +114,14 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "announcement_CQXTMG": {
+            "type": "announcement",
+            "settings": {
+              "text": "2/28 TASTING EVENT - Guest distilleries from Australia",
+              "color_scheme": "accent-1",
+              "link": "https://mitosaya.com/blogs/news/202602-guest-distilleries-from-australia"
+            }
+          },
           "announcement_dBM77C": {
             "type": "announcement",
             "settings": {
@@ -178,6 +186,7 @@
           }
         },
         "block_order": [
+          "announcement_CQXTMG",
           "announcement_dBM77C",
           "announcement_UiNE7k",
           "announcement_UkwepE",
