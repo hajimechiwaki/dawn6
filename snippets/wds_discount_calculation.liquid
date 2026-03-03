@@ -161,12 +161,17 @@
             {%- endif -%}
             {%  if customer and shop.metafields.wds.wds_fix_price_settings.value.is_enabled == 1 %}
                 {% assign wds_v_min_price = 99999999999999999999999999999999999999999 %}
-              {% for wds_fix_price_count in (1..20) %}
+              {% for wds_fix_price_count in (1..40) %}
                 {% assign wds_fix_price_variable = 'wds_fix_' %}
 
                 {% assign wds_fix_price_variable = wds_fix_price_variable | append : wds_fix_price_count%} 
                 {% if shop.metafields.wds_fix_price[wds_fix_price_variable].value %}
-                {% assign wds_fix_price= shop.metafields.wds_fix_price[wds_fix_price_variable].value | where: "p_id", wds_product.id %}
+                {% assign wds_product_id = wds_product.id | append:'' %}
+                {% assign wds_fix_price= shop.metafields.wds_fix_price[wds_fix_price_variable].value | where: "p_id", wds_product_id %}
+                {%  if wds_fix_price == blank  %} 
+                    {% assign wds_product_id = wds_product.id  %}
+                    {% assign wds_fix_price= shop.metafields.wds_fix_price[wds_fix_price_variable].value | where: "p_id", wds_product_id %}
+                {% endif %}
                 {% assign variant_id = variant.id | append: "" %}
                 {% assign wds_fix_price_variants = wds_fix_price | map: 'variants'  %} 
                 {% for wds_fix_price_variants_leval in wds_fix_price_variants %}
@@ -376,11 +381,16 @@
   
     {% assign wds_v_min_price = 99999999999999999999999999999999999999999 %} 
     {% assign wds_v_max_price = wds_price_max %} 
-    {% for wds_fix_price_count in (1..20) %}
+    {% for wds_fix_price_count in (1..40) %}
       {% assign wds_fix_price_variable = 'wds_fix_' %}
       {% assign wds_fix_price_variable = wds_fix_price_variable | append : wds_fix_price_count%} 
       {% if shop.metafields.wds_fix_price[wds_fix_price_variable].value %}
-      {% assign wds_fix_price= shop.metafields.wds_fix_price[wds_fix_price_variable].value | where: "p_id", wds_product.id %}
+        {% assign wds_product_id = wds_product.id | append:'' %}
+      {% assign wds_fix_price= shop.metafields.wds_fix_price[wds_fix_price_variable].value | where: "p_id",wds_product_id %}
+      {%  if wds_fix_price == blank  %} 
+        {% assign wds_product_id = wds_product.id  %}
+        {% assign wds_fix_price= shop.metafields.wds_fix_price[wds_fix_price_variable].value | where: "p_id", wds_product_id %}
+        {% endif %}
       {% assign variant_id = wds_product.selected_or_first_available_variant.id | append: "" %}
       {% assign wds_fix_price_variants = wds_fix_price | map: 'variants'  %} 
       {% for wds_fix_price_variants_leval in wds_fix_price_variants %}
@@ -463,10 +473,19 @@
   
 {% if customer and shop.metafields.wds.wds_fix_price_settings.value.is_enabled == 1 %}
     {% assign wds_v_min_price = 99999999999999999999999999999999999999999 %}
-    {% assign wds_fix_price= shop.metafields.wds_fix_price.wds_fix_1.value | where: "p_id", wds_product.id %}
-    {% assign variant_id = wds_variant.id | append: "" %}
-    {% assign wds_fix_price_variants = wds_fix_price | map: 'variants'  %} 
-    {% for wds_fix_price_variants_leval in wds_fix_price_variants %}
+    {% for wds_fix_price_count in (1..40) %}
+        {% assign wds_fix_price_variable = 'wds_fix_' %}
+        {% assign wds_fix_price_variable = wds_fix_price_variable | append : wds_fix_price_count%} 
+        {% if shop.metafields.wds_fix_price[wds_fix_price_variable].value %}
+        {% assign wds_product_id = wds_product.id | append:'' %}
+        {% assign wds_fix_price= shop.metafields.wds_fix_price[wds_fix_price_variable].value | where: "p_id", wds_product_id %}
+        {%  if wds_fix_price == blank  %} 
+            {% assign wds_product_id = wds_product.id  %}
+            {% assign wds_fix_price= shop.metafields.wds_fix_price[wds_fix_price_variable].value | where: "p_id", wds_product_id %}
+        {% endif %} 
+        {% assign variant_id = wds_variant.id | append: "" %}
+        {% assign wds_fix_price_variants = wds_fix_price | map: 'variants'  %} 
+        {% for wds_fix_price_variants_leval in wds_fix_price_variants %}
         {% for customer_tag in customer.tags %}
             {% assign fix_price_tag =  customer_tag | downcase %}
             {% if  wds_fix_price_variants_leval[variant_id][fix_price_tag] %}
@@ -482,6 +501,8 @@
             {% endif %}
         {% endfor %}
     {% endfor %}
+{% endif %} 
+{% endfor %}
 {% endif %}  
    {% else %}
 {%- liquid

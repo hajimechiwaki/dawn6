@@ -24,7 +24,43 @@
  100% { transform: rotate(360deg); }
 }</style>
  <script>
-   window.wds_timer_for_checkout=5000;
+
+window.WDSsetCookie=function(cvalue) {
+  
+  const d = new Date();
+  d.setTime(d.getTime() + (1 * 24 * 60 * 60 * 1000));
+  let expires = "expires="+d.toUTCString();
+  document.cookie = "wdsReloadPageCount=" + cvalue + ";" + expires + ";path=/";
+ 
+}
+window.WDSdeleteCookie=function(){
+  document.cookie = "wdsReloadPageCount=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  
+}
+window.WDSgetCookie=function() {
+
+  let name ="wdsReloadPageCount=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+   {% unless template == 'cart' %}
+     {% unless canonical_url contains "/apps/wholesale" %}
+     window.WDSdeleteCookie();
+     
+  {% endunless %}
+    {% endunless %}
+  
+ window.wds_timer_for_checkout=5000;
  window.wds_view_cart = function wds_view_cart(e){
  e.disabled = true;
  window.top.location.href = '/apps/wholesale/save/cart';
@@ -103,10 +139,17 @@
      a[href^='/cart']{ display: none !important }
      a[href^='/checkout']{ display: none !important }
      </style>
-{% if is_wds_customer == true %}
+     {% if is_wds_customer == true %}
      {% if cart.currency.iso_code != shop.currency %}
        <script>
-           window.location.href=window.location.href+"?currency={{shop.currency}}";
+         {% unless reloadPage == 'false' %}
+            if(window.WDSgetCookie() == ''){
+              window.WDSsetCookie(1);
+              window.location.href=window.location.href+"?currency={{shop.currency}}";
+              
+            }
+            
+           {% endunless %}
        </script>
      {% endif %}
 {% endif %}
@@ -136,13 +179,17 @@
   </style>
    {% if template == 'cart' %}
 
-
-     
-     
     {% if is_wds_customer == true %}
       {% if cart.currency.iso_code != shop.currency %}
         <script>
-            window.location.href=window.location.href+"?currency={{shop.currency}}";
+          {% unless reloadPage == 'false' %}
+            if(window.WDSgetCookie() == ''){
+              window.location.href=window.location.href+"?currency={{shop.currency}}";
+              window.WDSsetCookie(1);
+              console.log('reload page')
+            }
+
+          {% endunless %}
         </script>
       {% endif %}
  {% endif %}
@@ -568,6 +615,8 @@
                      } else {
                        let  wds_cart_check_object = xhr_cart_check.response;
                        if(window.wds_orignal_items_count != wds_cart_check_object.item_count ){
+                         window.WDSdeleteCookie();
+                        
                          window.wds_orignal_items_count = parseInt(JSON.stringify(wds_cart_check_object.item_count));
                          setTimeout(function(){
                            cart_item_validation()
