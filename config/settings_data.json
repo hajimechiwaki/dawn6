@@ -116,6 +116,7 @@
         "blocks": {
           "announcement_CQXTMG": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "2/28 TASTING EVENT - Guest distilleries from Australia",
               "color_scheme": "accent-1",
@@ -124,7 +125,6 @@
           },
           "announcement_dBM77C": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "New Release in February / 新製品のご紹介",
               "color_scheme": "accent-1",
