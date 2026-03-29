@@ -237,8 +237,8 @@
         "buttons_GK4nBm": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "207 CHOCOLATE MINT",
-            "button_link_1": "shopify://products/eau-207-chocolate-mint",
+            "button_label_1": "209 UME BLOSSOM",
+            "button_link_1": "shopify://products/eau-209-ume-blossom",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -254,7 +254,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/eau-207-chocolate-mint_img00.jpg",
+        "image": "shopify://shop_images/eau-209-ume-blossom_img00.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "adapt_height_first_image": false,
