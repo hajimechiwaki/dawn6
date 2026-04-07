@@ -148,13 +148,42 @@
         "padding_bottom": 0
       }
     },
-    "featured_collection": {
+    "featured_collection_zrYjkp": {
       "type": "featured-collection",
       "settings": {
         "title": "",
         "heading_size": "h2",
         "collection": "new-arrival",
         "products_to_show": 12,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "show_view_all": true,
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_GtLaHH": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"content\">\n<div class=\"content_inner\">\n<h2 class=\"content_title -center\"><!--COMING SOON / <br class=\"-sp\">--><a href=\"https://mitosaya.com/collections/new-arrival\">OPEN DAY<br>[COAST / FIELD - Made Across Boso]</a></h2>\n<!--<p class=\"-center\">26 February (Sun.) 10:00 on sale</p>-->\n</div>\n</div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "collection": "open-day",
+        "products_to_show": 8,
         "columns_desktop": 4,
         "color_scheme": "background-1",
         "show_view_all": true,
@@ -280,8 +309,10 @@
   "order": [
     "16552723563216a654",
     "slideshow_NBDRhX",
-    "165527829480c1fcd3",
+    "custom_liquid_GtLaHH",
     "featured_collection",
+    "165527829480c1fcd3",
+    "featured_collection_zrYjkp",
     "1655278342572f5448",
     "165527848197e50707",
     "165527848672d46f76",
