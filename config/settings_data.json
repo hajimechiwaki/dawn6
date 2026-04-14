@@ -114,6 +114,14 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "announcement_wQ9Ceh": {
+            "type": "announcement",
+            "settings": {
+              "text": "Welcome to our store",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          },
           "announcement_CQXTMG": {
             "type": "announcement",
             "disabled": true,
@@ -127,6 +135,14 @@
             "type": "announcement",
             "settings": {
               "text": "New Release in March / 新製品のご紹介",
+              "color_scheme": "accent-1",
+              "link": "https://mitosaya.com/collections/new-arrival"
+            }
+          },
+          "announcement_HGQMzP": {
+            "type": "announcement",
+            "settings": {
+              "text": "4/25, 26 OPEN DAY [COAST/FIELD - Made Across Boso]",
               "color_scheme": "accent-1",
               "link": "https://mitosaya.com/collections/new-arrival"
             }
@@ -158,15 +174,6 @@
               "link": "shopify://blogs/news/202512-calendar"
             }
           },
-          "da8b053b-43cd-4818-a123-9ff8d5b8d762": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "text": "Join the mitosaya pals | mitosaya pals 新規会員募集中",
-              "color_scheme": "accent-1",
-              "link": "shopify://products/mitosaya-pals"
-            }
-          },
           "announcement_BPVxwi": {
             "type": "announcement",
             "disabled": true,
@@ -187,12 +194,13 @@
           }
         },
         "block_order": [
+          "announcement_wQ9Ceh",
           "announcement_CQXTMG",
           "announcement_dBM77C",
+          "announcement_HGQMzP",
           "announcement_UiNE7k",
           "announcement_UkwepE",
           "announcement_k9RBQU",
-          "da8b053b-43cd-4818-a123-9ff8d5b8d762",
           "announcement_BPVxwi",
           "announcement_bJTjWz"
         ],
