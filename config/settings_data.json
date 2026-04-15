@@ -116,6 +116,7 @@
         "blocks": {
           "announcement_wQ9Ceh": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Welcome to our store",
               "color_scheme": "accent-1",
