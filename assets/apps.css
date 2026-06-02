@@ -163,6 +163,23 @@
   object-fit: contain;
 }
 
+.page_imgs .page_imgs_item { width: 100%; }
+.page_imgs .page_imgs_item > img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: initial;
+  object-fit: initial;
+}
+.page_imgs .ss-cap {
+  margin-top: .5em;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #808080;
+}
+.page_imgs .ss-cap a { color: #808080; }
+
 .slick-arrow {
   width: 4rem;
   height: 4rem;
