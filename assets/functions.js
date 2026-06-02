@@ -115,6 +115,6 @@ $(function(){
 
 });
 
-
+$(function(){ $(".page_imgs").slick({arrows:false,dots:true}); });
 
 
