@@ -163,10 +163,6 @@
   object-fit: contain;
 }
 
-/* 20260603 update */
-.page_imgs .slick-slide > div { line-height: 0; }
-.page_imgs .page_imgs_caption { margin-top: 1rem; }
-
 .slick-arrow {
   width: 4rem;
   height: 4rem;
