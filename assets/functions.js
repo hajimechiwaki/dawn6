@@ -115,4 +115,6 @@ $(function(){
 
 });
 
+
+
 $(function(){ $(".page_slide").slick({arrows:false,dots:true}); });
