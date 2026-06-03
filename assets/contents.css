@@ -225,6 +225,10 @@ hr {
   margin-top: 0;
 }
 
+.-git10>*+* {
+  margin-top: 1rem;
+}
+
 .-git20>*+* {
   margin-top: 2rem;
 }
@@ -268,6 +272,10 @@ hr {
 
 .-fs16 {
   font-size: 1.6rem !important;
+}
+
+.-fs18 {
+  font-size: 1.8rem !important;
 }
 
 .-fs20 {
