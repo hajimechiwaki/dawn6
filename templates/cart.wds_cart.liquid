@@ -35,7 +35,7 @@
      
 	{% for item in cart.items %}  
 	
-	{% include 'wds_discount_calculation' with wds_product:item.product, wds_variant:item.variant, mode:'variant' %}
+	{% include 'wds_discount_calculation' with wds_product.item.product, wds_product: item.product, wds_variant: item.variant, mode: 'variant' %}
 
 	{% assign temp_wds_apply_tag = wds_apply_tag | downcase %}
  	{% if customer_tags contains temp_wds_apply_tag or temp_wds_apply_tag == wds_custom_customer_tag  and wds_apply_discount != 1 %}
@@ -87,4 +87,15 @@
 "wds_customer" : {{wds_customer }}
 }
 {% endcapture %}
-{{ wds_cart_object | strip_newlines }}
+{{ wds_cart_object | strip_newlines }}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'wds_discount_calculation' with wds_product:item.product, wds_variant:item.variant,
+    mode:'variant' %}"
+  to: "{% include 'wds_discount_calculation' with wds_product.item.product, wds_product:
+    item.product, wds_variant: item.variant, mode: 'variant' %}"
+  position: 992..1133
+{%- endcomment -%}

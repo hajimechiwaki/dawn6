@@ -14,11 +14,22 @@
     "products":
         [
             {% for product in search.results %}
-				{% render 'wds_discount_calculation' with wds_product:product, mode:'json' , mode='render'%}
+				{% render 'wds_discount_calculation' with wds_product.product, wds_product: product, mode: 'json' %}
                 {% unless forloop.last %},{% endunless %}               
             {% endfor %}
         ]
 }
 {% endcapture %}
 {% endpaginate %}
-{{- products | strip_newlines -}}
+{{- products | strip_newlines -}}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'wds_discount_calculation' with wds_product:product, mode:'json'
+    , mode='render'%}"
+  to: "{% render 'wds_discount_calculation' with wds_product.product, wds_product:
+    product, mode: 'json' %}"
+  position: 453..553
+{%- endcomment -%}
