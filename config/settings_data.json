@@ -114,8 +114,17 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "announcement_aYHqqG": {
+            "type": "announcement",
+            "settings": {
+              "text": "Oct. 24 (Sat.), 25 (Sun.)  [Ö Garden - Market of Artisans and Makers]",
+              "color_scheme": "background-2",
+              "link": "https://mitosaya.com/blogs/news/20260920-o-garden"
+            }
+          },
           "announcement_wQ9Ceh": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "mitosaya & CAN-PANY | August 2026",
               "color_scheme": "accent-1",
@@ -196,6 +205,7 @@
           }
         },
         "block_order": [
+          "announcement_aYHqqG",
           "announcement_wQ9Ceh",
           "announcement_CQXTMG",
           "announcement_dBM77C",
